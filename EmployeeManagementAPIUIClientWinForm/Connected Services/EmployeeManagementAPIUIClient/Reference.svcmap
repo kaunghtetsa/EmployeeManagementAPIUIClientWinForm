@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="94e3fb9e-ec2a-4ca7-bb24-7262fb1741cb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EmployeeManagementWebAPIUIService.xsd" MetadataType="Schema" ID="5c76821f-a6f7-4b81-9b69-9015bb1738f8" SourceId="1" SourceUrl="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd4" />
+    <MetadataFile FileName="EmployeeManagementWebAPIUIService.wsdl" MetadataType="Wsdl" ID="70847f48-dbaf-41a0-a247-6d58f725028a" SourceId="1" SourceUrl="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="EmployeeManagementWebAPIUIService1.xsd" MetadataType="Schema" ID="754a37dc-b557-408f-80db-f696fbdb9e80" SourceId="1" SourceUrl="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd3" />
+    <MetadataFile FileName="EmployeeManagementWebAPIUIService2.xsd" MetadataType="Schema" ID="d70d3318-ebd4-4217-ba6e-09c3a582ae19" SourceId="1" SourceUrl="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd7" />
+    <MetadataFile FileName="EmployeeManagementWebAPIUIService1.wsdl" MetadataType="Wsdl" ID="38c1bbd8-5338-4fae-bd9a-ebfb075b29b4" SourceId="1" SourceUrl="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?wsdl" />
+    <MetadataFile FileName="EmployeeManagementWebAPIUIService.disco" MetadataType="Disco" ID="1c711bf8-c8ad-4060-b740-bff9c928239c" SourceId="1" SourceUrl="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?disco" />
+    <MetadataFile FileName="EmployeeManagementWebAPIUIService3.xsd" MetadataType="Schema" ID="354a4fc9-e88f-42f4-bb0b-c505af632196" SourceId="1" SourceUrl="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EmployeeManagementWebAPIUIService4.xsd" MetadataType="Schema" ID="29fffe3d-e70f-47fc-ad04-e10e64918d68" SourceId="1" SourceUrl="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd6" />
+    <MetadataFile FileName="EmployeeManagementWebAPIUIService5.xsd" MetadataType="Schema" ID="c6e8a83a-69ed-4dae-b8fe-2ede14e4c40b" SourceId="1" SourceUrl="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd9" />
+    <MetadataFile FileName="EmployeeManagementWebAPIUIService6.xsd" MetadataType="Schema" ID="94b5ab0f-b54d-48ea-bda5-3a549e330eab" SourceId="1" SourceUrl="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd1" />
+    <MetadataFile FileName="EmployeeManagementWebAPIUIService7.xsd" MetadataType="Schema" ID="edbbdc41-d507-4aca-9429-e12a60c3b967" SourceId="1" SourceUrl="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd5" />
+    <MetadataFile FileName="EmployeeManagementWebAPIUIService8.xsd" MetadataType="Schema" ID="1de7a7f6-3991-48c6-8c88-7194a1cc5b90" SourceId="1" SourceUrl="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd8" />
+    <MetadataFile FileName="EmployeeManagementWebAPIUIService9.xsd" MetadataType="Schema" ID="98d77291-e7ed-433f-ad08-0fd39159a7fc" SourceId="1" SourceUrl="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

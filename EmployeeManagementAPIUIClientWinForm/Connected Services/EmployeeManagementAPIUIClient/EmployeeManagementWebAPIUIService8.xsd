@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.WebAPIUI.Model.GetUserInfoList.Response" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.WebAPIUI.Model.GetUserInfoList.Response" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.DataAccess.Model.WebAPI.GetUserInfoList" />
+  <xs:import schemaLocation="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.WebAPIUI.Model.Common.Response" />
+  <xs:complexType name="ResGetUserInfoList">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.WebAPIUI.Model.Common.Response" base="q1:ResultBase">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.DataAccess.Model.WebAPI.GetUserInfoList" minOccurs="0" name="UserDetailInfoList" nillable="true" type="q2:ArrayOfUserInfoList" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ResGetUserInfoList" nillable="true" type="tns:ResGetUserInfoList" />
+</xs:schema>

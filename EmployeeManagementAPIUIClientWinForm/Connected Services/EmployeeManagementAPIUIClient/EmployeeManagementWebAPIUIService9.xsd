@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/V1.0.0" elementFormDefault="qualified" targetNamespace="http://tempuri.org/V1.0.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.WebAPIUI.Model.Common.Request" />
+  <xs:import schemaLocation="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.WebAPIUI.Model.GetUserInfo.Response" />
+  <xs:import schemaLocation="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.DataAccess.Common.Paging" />
+  <xs:import schemaLocation="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.DataAccess.Common.FilterInfo" />
+  <xs:import schemaLocation="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.WebAPIUI.Model.GetUserInfoList.Response" />
+  <xs:element name="GetUserInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.WebAPIUI.Model.Common.Request" minOccurs="0" name="authInfo" nillable="true" type="q1:AuthenticationInfo" />
+        <xs:element minOccurs="0" name="userID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.WebAPIUI.Model.GetUserInfo.Response" minOccurs="0" name="GetUserInfoResult" nillable="true" type="q2:ResGetUserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserInfoList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.WebAPIUI.Model.Common.Request" minOccurs="0" name="authInfo" nillable="true" type="q3:AuthenticationInfo" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.DataAccess.Common.Paging" minOccurs="0" name="iPagingPara" nillable="true" type="q4:Paging" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.DataAccess.Common.FilterInfo" minOccurs="0" name="objFilterInfo" nillable="true" type="q5:UserFilterInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserInfoListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.WebAPIUI.Model.GetUserInfoList.Response" minOccurs="0" name="GetUserInfoListResult" nillable="true" type="q6:ResGetUserInfoList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

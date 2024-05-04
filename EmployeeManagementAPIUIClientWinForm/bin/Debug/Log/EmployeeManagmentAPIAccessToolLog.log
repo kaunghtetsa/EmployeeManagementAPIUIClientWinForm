@@ -1,0 +1,1314 @@
+﻿2022-06-06 11:56:14,647 [1] [INFO ] Application is started.
+ 2022-06-06 14:09:56,511 [1] [INFO ] Application is started.
+ 2022-06-06 14:16:09,303 [GetUserInfoCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller::CallGetUserInfoAPI] - Call GetUserInfo API. LoginID = acty.hr
+ 2022-06-06 14:26:09,758 [GetUserInfoCaller] [ERROR] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller] - 
+ System.TimeoutException: The request channel timed out while waiting for a reply after 00:09:59.9403538. Increase the timeout value passed to the call to Request or increase the SendTimeout value on the Binding. The time allotted to this operation may have been a portion of a longer timeout. ---> System.TimeoutException: The HTTP request to 'http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc' has exceeded the allotted timeout of 00:09:59.9640000. The time allotted to this operation may have been a portion of a longer timeout. ---> System.Net.WebException: The operation has timed out
+   at System.Net.HttpWebRequest.GetResponse()
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.IEmployeeManagementWebAPIUIService.GetUserInfo(AuthenticationInfo authInfo, String userID)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.EmployeeManagementWebAPIUIServiceClient.GetUserInfo(AuthenticationInfo authInfo, String userID) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Connected Services\EmployeeManagementAPIUIClient\Reference.cs:line 872
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller.CallGetUserInfoAPI(AuthenticationInfo objAuthInfo, String userID) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoCaller.cs:line 130
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller.Process(Object param) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoCaller.cs:line 90
+2022-06-06 14:33:44,982 [1] [INFO ] Application is started.
+ 2022-06-06 14:35:07,948 [GetUserInfoCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller::CallGetUserInfoAPI] - Call GetUserInfo API. LoginID = acty.hr
+ 2022-06-06 14:40:34,618 [1] [INFO ] Application is started.
+ 2022-06-06 14:40:53,403 [GetUserInfoCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller::CallGetUserInfoAPI] - Call GetUserInfo API. LoginID = acty.hr
+ 2022-06-06 14:43:46,481 [1] [INFO ] Application is started.
+ 2022-06-06 14:44:28,501 [GetUserInfoCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller::CallGetUserInfoAPI] - Call GetUserInfo API. LoginID = acty.hr
+ 2022-06-06 14:44:43,138 [1] [INFO ] Application is started.
+ 2022-06-06 14:45:58,268 [GetUserInfoCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller::CallGetUserInfoAPI] - Call GetUserInfo API. LoginID = acty.hr
+ 2022-06-06 15:03:38,411 [GetUserInfoCaller] [ERROR] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller] - 
+ System.TimeoutException: The request channel timed out while waiting for a reply after 00:09:59.9512143. Increase the timeout value passed to the call to Request or increase the SendTimeout value on the Binding. The time allotted to this operation may have been a portion of a longer timeout. ---> System.TimeoutException: The HTTP request to 'http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc' has exceeded the allotted timeout of 00:09:59.9760000. The time allotted to this operation may have been a portion of a longer timeout. ---> System.Net.WebException: The request was aborted: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.IEmployeeManagementWebAPIUIService.GetUserInfo(AuthenticationInfo authInfo, String userID)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.EmployeeManagementWebAPIUIServiceClient.GetUserInfo(AuthenticationInfo authInfo, String userID)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller.CallGetUserInfoAPI(AuthenticationInfo objAuthInfo, String userID)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller.Process(Object param)
+2022-06-06 15:03:48,940 [1] [INFO ] Application is started.
+ 2022-06-06 15:04:13,406 [GetUserInfoCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller::CallGetUserInfoAPI] - Call GetUserInfo API. LoginID = acty.hr
+ 2022-06-06 15:06:38,930 [GetUserInfoCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller::CallGetUserInfoAPI] - Call GetUserInfo API. LoginID = acty.hr
+ 2022-06-06 15:07:38,682 [1] [INFO ] Application is started.
+ 2022-06-06 15:07:56,649 [GetUserInfoCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller::CallGetUserInfoAPI] - Call GetUserInfo API. LoginID = acty.hr
+ 2022-06-06 15:14:46,809 [1] [INFO ] Application is started.
+ 2022-06-06 15:15:01,241 [GetUserInfoCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller::CallGetUserInfoAPI] - Call GetUserInfo API. LoginID = acty.hr
+ 2022-06-06 15:27:03,647 [1] [INFO ] Application is started.
+ 2022-06-06 15:27:23,394 [GetUserInfoCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller::CallGetUserInfoAPI] - Call GetUserInfo API. LoginID = acty.hr
+ 2022-06-06 15:27:30,244 [GetUserInfoCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller::CallGetUserInfoAPI] - Successfully called GetUserInfoAPI. ResultCode = 1
+ 2022-06-08 09:07:08,248 [1] [INFO ] Application is started.
+ 2022-06-08 09:15:18,713 [1] [INFO ] Application is started.
+ 2022-06-08 09:27:26,057 [1] [INFO ] Application is started.
+ 2022-06-08 09:28:13,289 [1] [ERROR] System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 303
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 88
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at ASM.EmployeeManagementAPIUIClientWinForm.MainForm._btnGetUserInfoList_Click(Object sender, EventArgs e) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\MainForm.cs:line 35
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-08 09:28:31,800 [1] [INFO ] Application is started.
+ 2022-06-08 09:29:13,863 [1] [INFO ] Application is started.
+ 2022-06-08 09:29:51,208 [1] [INFO ] Application is started.
+ 2022-06-08 09:30:38,567 [1] [ERROR] System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 304
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.RunDialog(Form form)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at System.Windows.Forms.Form.ShowDialog()
+   at ASM.EmployeeManagementAPIUIClientWinForm.MainForm._btnGetUserInfoList_Click(Object sender, EventArgs e) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\MainForm.cs:line 35
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-08 09:30:50,928 [1] [INFO ] Application is started.
+ 2022-06-08 09:31:54,917 [1] [INFO ] Application is started.
+ 2022-06-08 09:32:44,074 [1] [ERROR] System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 304
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-08 09:32:53,772 [1] [INFO ] Application is started.
+ 2022-06-08 09:34:32,531 [1] [INFO ] Application is started.
+ 2022-06-08 09:39:26,560 [1] [INFO ] Application is started.
+ 2022-06-08 09:40:01,187 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 09:42:39,121 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 09:43:02,561 [1] [INFO ] Application is started.
+ 2022-06-08 09:43:39,300 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 09:44:11,404 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 09:44:17,808 [1] [INFO ] Application is started.
+ 2022-06-08 09:44:20,932 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 09:48:25,157 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 09:48:33,409 [1] [INFO ] Application is started.
+ 2022-06-08 09:48:34,989 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 09:49:37,833 [GetUserInfoListCaller] [ERROR] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller] - 
+ System.ServiceModel.FaultException: The server was unable to process the request due to an internal error.  For more information about the error, either turn on IncludeExceptionDetailInFaults (either from ServiceBehaviorAttribute or from the <serviceDebug> configuration behavior) on the server in order to send the exception information back to the client, or turn on tracing as per the Microsoft .NET Framework SDK documentation and inspect the server trace logs.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.IEmployeeManagementWebAPIUIService.GetUserInfoList(AuthenticationInfo authInfo, Paging iPagingPara, UserFilterInfo objFilterInfo)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.EmployeeManagementWebAPIUIServiceClient.GetUserInfoList(AuthenticationInfo authInfo, Paging iPagingPara, UserFilterInfo objFilterInfo) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Connected Services\EmployeeManagementAPIUIClient\Reference.cs:line 1114
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.CallGetUserInfoListAPI(AuthenticationInfo objAuthInfo, Paging objPaging, UserFilterInfo objFilterInfo) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 132
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.Process(Object param) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 90
+2022-06-08 09:49:46,068 [1] [INFO ] Application is started.
+ 2022-06-08 09:49:47,410 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 09:54:20,611 [1] [INFO ] Application is started.
+ 2022-06-08 09:54:22,165 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 09:55:42,112 [1] [INFO ] Application is started.
+ 2022-06-08 09:55:43,650 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 09:56:56,429 [GetUserInfoListCaller] [ERROR] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller] - 
+ System.ServiceModel.CommunicationException: An error occurred while receiving the HTTP response to http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc. This could be due to the service endpoint binding not using the HTTP protocol. This could also be due to an HTTP request context being aborted by the server (possibly due to the service shutting down). See server logs for more details. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a receive. ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.IEmployeeManagementWebAPIUIService.GetUserInfoList(AuthenticationInfo authInfo, Paging iPagingPara, UserFilterInfo objFilterInfo)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.EmployeeManagementWebAPIUIServiceClient.GetUserInfoList(AuthenticationInfo authInfo, Paging iPagingPara, UserFilterInfo objFilterInfo) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Connected Services\EmployeeManagementAPIUIClient\Reference.cs:line 1114
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.CallGetUserInfoListAPI(AuthenticationInfo objAuthInfo, Paging objPaging, UserFilterInfo objFilterInfo) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 132
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.Process(Object param) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 90
+2022-06-08 09:57:03,485 [1] [INFO ] Application is started.
+ 2022-06-08 09:57:05,200 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 10:02:50,524 [1] [INFO ] Application is started.
+ 2022-06-08 10:02:51,787 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 10:05:00,366 [GetUserInfoListCaller] [ERROR] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller] - 
+ System.ServiceModel.FaultException: The server was unable to process the request due to an internal error.  For more information about the error, either turn on IncludeExceptionDetailInFaults (either from ServiceBehaviorAttribute or from the <serviceDebug> configuration behavior) on the server in order to send the exception information back to the client, or turn on tracing as per the Microsoft .NET Framework SDK documentation and inspect the server trace logs.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.IEmployeeManagementWebAPIUIService.GetUserInfoList(AuthenticationInfo authInfo, Paging iPagingPara, UserFilterInfo objFilterInfo)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.EmployeeManagementWebAPIUIServiceClient.GetUserInfoList(AuthenticationInfo authInfo, Paging iPagingPara, UserFilterInfo objFilterInfo) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Connected Services\EmployeeManagementAPIUIClient\Reference.cs:line 1114
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.CallGetUserInfoListAPI(AuthenticationInfo objAuthInfo, Paging objPaging, UserFilterInfo objFilterInfo) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 132
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.Process(Object param) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 90
+2022-06-08 10:05:07,222 [1] [INFO ] Application is started.
+ 2022-06-08 10:05:08,404 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 10:05:12,516 [GetUserInfoListCaller] [ERROR] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller] - 
+ System.ServiceModel.FaultException: The server was unable to process the request due to an internal error.  For more information about the error, either turn on IncludeExceptionDetailInFaults (either from ServiceBehaviorAttribute or from the <serviceDebug> configuration behavior) on the server in order to send the exception information back to the client, or turn on tracing as per the Microsoft .NET Framework SDK documentation and inspect the server trace logs.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.IEmployeeManagementWebAPIUIService.GetUserInfoList(AuthenticationInfo authInfo, Paging iPagingPara, UserFilterInfo objFilterInfo)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.EmployeeManagementWebAPIUIServiceClient.GetUserInfoList(AuthenticationInfo authInfo, Paging iPagingPara, UserFilterInfo objFilterInfo) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Connected Services\EmployeeManagementAPIUIClient\Reference.cs:line 1114
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.CallGetUserInfoListAPI(AuthenticationInfo objAuthInfo, Paging objPaging, UserFilterInfo objFilterInfo) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 132
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.Process(Object param) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 90
+2022-06-08 10:05:19,441 [1] [INFO ] Application is started.
+ 2022-06-08 10:05:21,133 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 10:06:27,787 [1] [INFO ] Application is started.
+ 2022-06-08 10:06:28,963 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 10:16:21,096 [1] [INFO ] Application is started.
+ 2022-06-08 10:16:22,733 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 10:17:42,107 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 10:22:04,273 [1] [INFO ] Application is started.
+ 2022-06-08 10:22:05,433 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 10:22:08,648 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 10:22:33,946 [1] [INFO ] Application is started.
+ 2022-06-08 10:22:35,216 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 10:22:39,155 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 10:23:35,924 [1] [INFO ] Application is started.
+ 2022-06-08 10:23:37,112 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 10:23:37,398 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 10:54:09,555 [1] [INFO ] Application is started.
+ 2022-06-08 10:54:13,840 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 10:54:16,695 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 10:54:38,703 [1] [INFO ] Application is started.
+ 2022-06-08 10:54:53,729 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 10:54:53,971 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 10:55:12,613 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 10:55:16,140 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 10:55:32,866 [1] [INFO ] Application is started.
+ 2022-06-08 10:55:37,910 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 10:55:38,147 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 10:56:07,638 [1] [INFO ] Application is started.
+ 2022-06-08 10:56:21,388 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 10:56:21,630 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 10:57:12,228 [GetUserInfoListCaller] [ERROR] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller] - 
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.Process(Object param) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 90
+2022-06-08 10:57:39,463 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 10:57:40,238 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 10:58:38,394 [1] [INFO ] Application is started.
+ 2022-06-08 10:59:43,150 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 10:59:43,402 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 10:59:54,060 [1] [INFO ] Application is started.
+ 2022-06-08 11:02:48,169 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 11:02:48,435 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 11:03:45,972 [1] [INFO ] Application is started.
+ 2022-06-08 11:03:50,865 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 11:03:51,137 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 11:03:51,144 [GetUserInfoListCaller] [ERROR] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller] - 
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.CallGetUserInfoListAPI(AuthenticationInfo objAuthInfo, Paging objPaging, UserFilterInfo objFilterInfo) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 139
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.Process(Object param) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 90
+2022-06-08 11:06:55,078 [1] [INFO ] Application is started.
+ 2022-06-08 11:07:04,523 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 11:07:04,769 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 11:07:54,688 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 11:07:54,719 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 11:10:40,007 [1] [INFO ] Application is started.
+ 2022-06-08 11:11:19,711 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 11:11:20,001 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 11:11:40,274 [1] [INFO ] Application is started.
+ 2022-06-08 11:11:49,080 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 11:11:49,321 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 11:12:11,040 [1] [INFO ] Application is started.
+ 2022-06-08 11:12:15,326 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 11:12:15,570 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 11:13:29,127 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 11:13:29,167 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 11:14:51,883 [1] [INFO ] Application is started.
+ 2022-06-08 11:14:56,206 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 11:14:56,458 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 11:15:35,004 [1] [INFO ] Application is started.
+ 2022-06-08 11:15:44,834 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 11:15:45,098 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 11:17:31,364 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 11:17:45,138 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 11:18:30,330 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 11:18:30,364 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 11:19:44,248 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 11:24:41,047 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 11:51:51,550 [1] [INFO ] Application is started.
+ 2022-06-08 11:52:30,659 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 11:59:12,373 [1] [INFO ] Application is started.
+ 2022-06-08 11:59:21,117 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 12:09:21,425 [GetUserInfoListCaller] [ERROR] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller] - 
+ System.TimeoutException: The request channel timed out while waiting for a reply after 00:09:59.9089996. Increase the timeout value passed to the call to Request or increase the SendTimeout value on the Binding. The time allotted to this operation may have been a portion of a longer timeout. ---> System.TimeoutException: The HTTP request to 'http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc' has exceeded the allotted timeout of 00:09:59.9740000. The time allotted to this operation may have been a portion of a longer timeout. ---> System.Net.WebException: The request was aborted: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.IEmployeeManagementWebAPIUIService.GetUserInfoList(AuthenticationInfo authInfo, Paging iPagingPara, UserFilterInfo objFilterInfo)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.EmployeeManagementWebAPIUIServiceClient.GetUserInfoList(AuthenticationInfo authInfo, Paging iPagingPara, UserFilterInfo objFilterInfo) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Connected Services\EmployeeManagementAPIUIClient\Reference.cs:line 833
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.CallGetUserInfoListAPI(AuthenticationInfo objAuthInfo, Paging objPaging, UserFilterInfo objFilterInfo) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 132
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.Process(Object param) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 90
+2022-06-08 12:34:11,190 [1] [INFO ] Application is started.
+ 2022-06-08 12:34:20,837 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 12:34:59,605 [1] [INFO ] Application is started.
+ 2022-06-08 12:35:04,181 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 12:35:21,278 [1] [INFO ] Application is started.
+ 2022-06-08 12:35:35,554 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 12:40:00,466 [1] [INFO ] Application is started.
+ 2022-06-08 12:40:04,490 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 12:40:34,287 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 12:40:41,945 [1] [INFO ] Application is started.
+ 2022-06-08 12:40:49,025 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 12:45:34,433 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 13:08:47,210 [1] [INFO ] Application is started.
+ 2022-06-08 13:08:48,847 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:09:29,182 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:51:06,748 [1] [INFO ] Application is started.
+ 2022-06-08 13:51:18,259 [1] [INFO ] Application is started.
+ 2022-06-08 13:51:31,182 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:51:58,560 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:52:26,244 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:52:32,403 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:52:48,433 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:52:48,456 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:53:05,780 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:53:05,811 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:53:17,434 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:53:17,456 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:53:31,606 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:53:31,631 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:55:32,466 [1] [INFO ] Application is started.
+ 2022-06-08 13:55:34,937 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:55:35,207 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:55:38,016 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:55:38,043 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:55:45,199 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:55:45,226 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:56:22,042 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:56:22,072 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:56:26,226 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:56:26,251 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:56:36,703 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:56:36,726 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:56:42,202 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:56:42,227 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:56:46,755 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:56:46,780 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:56:58,281 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:56:58,304 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:57:00,615 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:57:00,639 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:57:05,988 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:57:06,015 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:59:50,858 [1] [INFO ] Application is started.
+ 2022-06-08 13:59:52,145 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:59:52,344 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 13:59:55,244 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 13:59:55,263 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 14:25:24,454 [1] [INFO ] Application is started.
+ 2022-06-08 14:25:25,776 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 14:25:29,458 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 14:25:57,047 [1] [INFO ] Application is started.
+ 2022-06-08 14:26:02,536 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 14:26:02,780 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 14:26:13,104 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 14:26:13,131 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 14:26:28,145 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 14:26:28,167 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 14:26:45,220 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 14:26:45,242 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 14:26:46,779 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 14:26:46,800 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 14:26:48,249 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 14:26:48,271 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 14:26:51,031 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 14:26:51,064 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 14:27:52,130 [1] [INFO ] Application is started.
+ 2022-06-08 14:28:00,266 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 14:28:03,233 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 14:28:08,876 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 14:28:08,900 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 14:28:22,146 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 14:28:22,164 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 14:28:24,679 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 14:28:24,697 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 14:28:29,344 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 14:28:29,365 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:13:35,761 [1] [INFO ] Application is started.
+ 2022-06-08 15:13:52,240 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:13:55,265 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:14:01,456 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:14:01,492 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:14:02,339 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:14:02,365 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:14:02,929 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:14:02,954 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:14:03,418 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:14:03,440 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:14:04,001 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:14:04,024 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:14:04,555 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:14:04,576 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:14:05,100 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:14:05,121 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:14:05,305 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:14:05,325 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:14:05,522 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:14:05,542 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:14:05,711 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:14:05,745 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:14:05,897 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:14:05,925 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:14:06,086 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:14:06,107 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:14:30,656 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:14:33,165 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:15:09,954 [1] [INFO ] Application is started.
+ 2022-06-08 15:15:26,562 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:15:52,159 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:16:30,098 [1] [INFO ] Application is started.
+ 2022-06-08 15:16:31,440 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:17:26,047 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:18:07,324 [1] [INFO ] Application is started.
+ 2022-06-08 15:18:08,411 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:18:14,313 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:18:51,966 [GetUserInfoListCaller] [ERROR] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller] - 
+ System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'System.ServiceModel.Channels.ServiceChannel'.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.IEmployeeManagementWebAPIUIService.GetUserInfoList(AuthenticationInfo authInfo, Paging iPagingPara, UserFilterInfo objFilterInfo)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.EmployeeManagementWebAPIUIServiceClient.GetUserInfoList(AuthenticationInfo authInfo, Paging iPagingPara, UserFilterInfo objFilterInfo) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Connected Services\EmployeeManagementAPIUIClient\Reference.cs:line 833
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.CallGetUserInfoListAPI(AuthenticationInfo objAuthInfo, Paging objPaging, UserFilterInfo objFilterInfo) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 132
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.Process(Object param) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 90
+2022-06-08 15:18:58,857 [1] [INFO ] Application is started.
+ 2022-06-08 15:19:02,911 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:20:36,975 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 15:21:59,399 [GetUserInfoListCaller] [ERROR] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller] - 
+ System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'System.ServiceModel.Channels.ServiceChannel'.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.IEmployeeManagementWebAPIUIService.GetUserInfoList(AuthenticationInfo authInfo, Paging iPagingPara, UserFilterInfo objFilterInfo)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.EmployeeManagementWebAPIUIServiceClient.GetUserInfoList(AuthenticationInfo authInfo, Paging iPagingPara, UserFilterInfo objFilterInfo) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Connected Services\EmployeeManagementAPIUIClient\Reference.cs:line 833
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.CallGetUserInfoListAPI(AuthenticationInfo objAuthInfo, Paging objPaging, UserFilterInfo objFilterInfo) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 132
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.Process(Object param) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 90
+2022-06-08 15:22:03,873 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:32:03,904 [GetUserInfoListCaller] [ERROR] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller] - 
+ System.TimeoutException: The request channel timed out while waiting for a reply after 00:10:00. Increase the timeout value passed to the call to Request or increase the SendTimeout value on the Binding. The time allotted to this operation may have been a portion of a longer timeout. ---> System.TimeoutException: The HTTP request to 'http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc' has exceeded the allotted timeout of 00:10:00. The time allotted to this operation may have been a portion of a longer timeout. ---> System.Net.WebException: The request was aborted: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.IEmployeeManagementWebAPIUIService.GetUserInfoList(AuthenticationInfo authInfo, Paging iPagingPara, UserFilterInfo objFilterInfo)
+   at ASM.EmployeeManagementAPIUIClientWinForm.EmployeeManagementAPIUIClient.EmployeeManagementWebAPIUIServiceClient.GetUserInfoList(AuthenticationInfo authInfo, Paging iPagingPara, UserFilterInfo objFilterInfo) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Connected Services\EmployeeManagementAPIUIClient\Reference.cs:line 833
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.CallGetUserInfoListAPI(AuthenticationInfo objAuthInfo, Paging objPaging, UserFilterInfo objFilterInfo) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 132
+   at ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller.Process(Object param) in E:\Kaung Htet San\NewJoiners2021-WebAPI-Sample-master\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Mid\GetUserInfoListCaller.cs:line 90
+2022-06-08 15:35:40,276 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 15:39:36,580 [1] [INFO ] Application is started.
+ 2022-06-08 15:39:37,866 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:06:40,009 [1] [INFO ] Application is started.
+ 2022-06-08 16:06:41,448 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:06:51,447 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 16:06:59,610 [1] [INFO ] Application is started.
+ 2022-06-08 16:07:01,158 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:07:28,714 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 16:07:35,944 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:08:14,005 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 16:08:48,233 [1] [INFO ] Application is started.
+ 2022-06-08 16:08:49,755 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:08:56,715 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 16:09:24,667 [1] [INFO ] Application is started.
+ 2022-06-08 16:09:26,335 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:10:18,915 [1] [INFO ] Application is started.
+ 2022-06-08 16:10:20,005 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:10:50,340 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 16:12:18,431 [1] [INFO ] Application is started.
+ 2022-06-08 16:12:20,072 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:12:46,711 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 16:12:58,770 [1] [INFO ] Application is started.
+ 2022-06-08 16:13:00,384 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:14:47,129 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 16:15:35,528 [1] [INFO ] Application is started.
+ 2022-06-08 16:15:36,800 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:15:53,035 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 16:16:09,582 [1] [INFO ] Application is started.
+ 2022-06-08 16:16:10,835 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:16:11,124 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 16:16:12,892 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:16:12,922 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 16:16:37,024 [1] [INFO ] Application is started.
+ 2022-06-08 16:16:38,166 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:17:09,538 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 16:18:41,894 [1] [INFO ] Application is started.
+ 2022-06-08 16:18:42,829 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:19:51,643 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 16:21:45,876 [1] [INFO ] Application is started.
+ 2022-06-08 16:21:47,336 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:22:08,980 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-08 16:23:01,190 [1] [INFO ] Application is started.
+ 2022-06-08 16:23:02,378 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:23:17,719 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 16:23:29,781 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:23:32,750 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 16:23:37,021 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:23:37,042 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 16:23:39,988 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:23:40,008 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 16:23:46,888 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:23:46,908 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 16:25:37,332 [1] [INFO ] Application is started.
+ 2022-06-08 16:25:38,587 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:25:41,545 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 16:25:47,524 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:25:47,557 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 16:25:54,777 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:25:54,809 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 16:26:35,117 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:26:35,154 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 16:29:08,001 [1] [INFO ] Application is started.
+ 2022-06-08 16:30:04,475 [1] [INFO ] Application is started.
+ 2022-06-08 16:30:10,734 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:30:11,017 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 16:30:17,459 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:30:17,494 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 16:30:26,043 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:30:26,079 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-08 16:30:35,749 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-08 16:30:35,790 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 09:09:32,232 [1] [INFO ] Application is started.
+ 2022-06-09 09:09:34,863 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 09:09:59,111 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 09:10:20,350 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 09:11:18,490 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 09:12:27,442 [1] [INFO ] Application is started.
+ 2022-06-09 09:12:28,598 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 09:12:33,858 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 09:12:59,355 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 09:12:59,387 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 09:13:08,585 [1] [ERROR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-09 09:17:27,092 [1] [INFO ] Application is started.
+ 2022-06-09 09:17:30,283 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 09:17:33,053 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 09:17:51,184 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 09:17:51,314 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 09:18:00,651 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 09:18:00,673 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 09:18:05,925 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 09:18:05,945 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 09:18:09,491 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 09:18:09,528 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 09:18:18,239 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 09:18:18,272 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 09:18:21,406 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 09:18:21,434 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 09:18:24,534 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 09:18:24,574 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 09:18:30,791 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 09:18:30,855 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-09 09:18:35,342 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 09:18:35,371 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 09:18:40,433 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 09:18:40,461 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 09:18:49,296 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 09:18:49,333 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 09:44:32,641 [1] [INFO ] Application is started.
+ 2022-06-09 09:44:38,828 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 11:01:30,755 [1] [INFO ] Application is started.
+ 2022-06-09 11:01:36,695 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 11:01:45,251 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 11:02:49,343 [1] [INFO ] Application is started.
+ 2022-06-09 11:02:51,209 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 11:02:51,489 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 11:04:31,201 [1] [INFO ] Application is started.
+ 2022-06-09 11:05:54,668 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 11:05:54,926 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 11:07:05,698 [1] [INFO ] Application is started.
+ 2022-06-09 11:07:06,850 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 11:07:07,145 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 11:08:03,464 [1] [INFO ] Application is started.
+ 2022-06-09 11:08:04,831 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 11:08:05,157 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 11:08:35,198 [1] [INFO ] Application is started.
+ 2022-06-09 11:08:36,357 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 11:08:36,622 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 11:08:49,603 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 11:08:49,641 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 11:08:54,310 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 11:08:54,338 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 11:09:02,863 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 11:09:02,900 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 11:09:09,389 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 11:09:09,419 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 11:09:18,937 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 11:09:18,982 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 11:09:47,992 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 11:09:48,043 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 11:10:09,650 [1] [INFO ] Application is started.
+ 2022-06-09 11:10:10,872 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 11:10:11,132 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 11:10:39,314 [1] [INFO ] Application is started.
+ 2022-06-09 11:10:40,547 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 11:10:40,849 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 11:10:45,572 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 11:10:45,606 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 11:11:08,331 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 11:11:08,391 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 14:08:19,309 [1] [INFO ] Application is started.
+ 2022-06-09 14:08:20,605 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 14:13:20,415 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 14:13:26,146 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-09 14:13:54,778 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-09 14:16:31,867 [1] [INFO ] Application is started.
+ 2022-06-09 14:16:32,955 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:51:57,337 [1] [INFO ] Application is started.
+ 2022-06-10 10:51:58,889 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:52:06,057 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 10:53:33,787 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:53:38,342 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 10:53:54,625 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:53:54,673 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 10:54:04,168 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:54:04,188 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 10:54:15,975 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:54:16,029 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 10:54:17,767 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:54:17,792 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 10:54:18,530 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:54:18,559 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 10:54:18,841 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:54:18,865 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 10:54:19,169 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:54:19,191 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 10:54:19,863 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:54:19,899 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 10:54:21,006 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:54:21,044 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 10:54:30,729 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr235555555555555555555555555555555555555554
+ 2022-06-10 10:54:30,751 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 10:54:45,393 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:54:45,413 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 10:55:06,561 [1] [ERROR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 10:55:18,387 [1] [INFO ] Application is started.
+ 2022-06-10 10:55:23,722 [1] [ERROR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetSortKey() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 321
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 10:55:27,624 [1] [INFO ] Application is started.
+ 2022-06-10 10:55:31,817 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:55:32,082 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 10:55:36,058 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:55:36,086 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 10:55:37,513 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:55:37,534 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 10:55:38,051 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:55:38,073 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 10:55:38,543 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:55:38,564 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 10:55:38,800 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:55:38,824 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 10:55:39,025 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:55:39,047 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 10:55:53,547 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:55:53,565 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 10:56:07,526 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:57:23,725 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 10:57:35,025 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:59:03,662 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 10:59:10,199 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:59:10,303 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 10:59:14,767 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:59:14,866 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 10:59:46,536 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 10:59:46,612 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:00:01,689 [1] [ERROR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 11:00:06,235 [1] [INFO ] Application is started.
+ 2022-06-10 11:00:12,177 [1] [ERROR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 11:00:16,590 [1] [INFO ] Application is started.
+ 2022-06-10 11:00:20,566 [1] [ERROR] System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 11:00:25,023 [1] [INFO ] Application is started.
+ 2022-06-10 11:01:18,096 [1] [INFO ] Application is started.
+ 2022-06-10 11:01:20,332 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:01:20,601 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:01:27,489 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:01:27,524 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:01:40,137 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:01:40,156 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:01:45,344 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:01:45,374 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:01:47,467 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:01:47,492 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:01:50,093 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:01:50,131 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:01:52,448 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:01:52,483 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:01:54,521 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:01:54,559 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:01:58,582 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:01:58,612 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:02:10,376 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:02:10,413 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:03:27,184 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:03:27,204 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:03:42,864 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:03:42,889 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:03:52,040 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:03:52,061 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:04:20,380 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:04:20,409 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:04:23,809 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:04:23,830 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:05:53,278 [1] [INFO ] Application is started.
+ 2022-06-10 11:05:57,460 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:05:59,964 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:06:03,420 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:06:03,441 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:06:15,395 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:09:39,393 [1] [INFO ] Application is started.
+ 2022-06-10 11:09:47,450 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:09:53,771 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:09:58,065 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:09:58,107 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:10:12,822 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:10:12,842 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:10:15,670 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:10:15,698 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:14:17,930 [1] [INFO ] Application is started.
+ 2022-06-10 11:14:40,987 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:14:41,228 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:14:43,752 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:14:43,789 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:14:47,904 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:14:47,929 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:14:50,811 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:14:50,831 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:14:55,801 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:14:55,821 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:15:01,026 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:15:01,112 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:15:14,144 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:15:14,200 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:15:15,744 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:15:15,766 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:18:45,708 [GetUserInfoCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller::CallGetUserInfoAPI] - Call GetUserInfo API. LoginID = acty.hr
+ 2022-06-10 11:18:45,810 [GetUserInfoCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoCaller::CallGetUserInfoAPI] - Successfully called GetUserInfoAPI. ResultCode = 1
+ 2022-06-10 11:19:31,602 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:19:31,630 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:20:02,675 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:22:16,504 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:24:14,172 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:24:27,265 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:25:05,766 [1] [INFO ] Application is started.
+ 2022-06-10 11:25:14,490 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:25:18,180 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:25:27,379 [1] [INFO ] Application is started.
+ 2022-06-10 11:25:30,998 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:25:31,574 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:25:34,314 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:25:34,364 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:25:40,027 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:25:40,049 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:25:40,590 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:25:40,615 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:25:40,787 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:25:40,811 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 11:26:00,173 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:32:31,732 [1] [INFO ] Application is started.
+ 2022-06-10 11:32:40,272 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:32:44,377 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:32:53,056 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:32:53,102 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:33:00,255 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:33:00,282 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:33:07,234 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:33:07,260 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:33:15,144 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 11:33:15,167 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 2
+ 2022-06-10 11:57:54,423 [1] [INFO ] Application is started.
+ 2022-06-10 11:58:00,799 [1] [ERROR] System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 16:04:36,224 [1] [INFO ] Application is started.
+ 2022-06-10 16:04:42,333 [1] [ERROR] System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 16:04:50,142 [1] [INFO ] Application is started.
+ 2022-06-10 16:04:54,273 [1] [ERROR] System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 16:06:13,741 [1] [INFO ] Application is started.
+ 2022-06-10 16:06:20,529 [1] [ERROR] System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 16:06:42,817 [1] [INFO ] Application is started.
+ 2022-06-10 16:06:46,750 [1] [ERROR] System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 16:07:37,938 [1] [INFO ] Application is started.
+ 2022-06-10 16:07:56,615 [1] [ERROR] System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 16:08:05,840 [1] [INFO ] Application is started.
+ 2022-06-10 16:08:22,123 [1] [INFO ] Application is started.
+ 2022-06-10 16:08:29,121 [1] [ERROR] System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 16:08:36,573 [1] [INFO ] Application is started.
+ 2022-06-10 16:08:46,172 [1] [ERROR] System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 16:09:15,401 [1] [INFO ] Application is started.
+ 2022-06-10 16:10:19,146 [1] [INFO ] Application is started.
+ 2022-06-10 16:26:40,522 [1] [INFO ] Application is started.
+ 2022-06-10 16:27:02,562 [1] [ERROR] System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 16:27:07,245 [1] [INFO ] Application is started.
+ 2022-06-10 16:30:04,027 [1] [INFO ] Application is started.
+ 2022-06-10 16:30:07,318 [1] [ERROR] System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 16:30:14,629 [1] [INFO ] Application is started.
+ 2022-06-10 16:31:16,017 [1] [ERROR] System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 16:31:55,974 [1] [INFO ] Application is started.
+ 2022-06-10 16:31:59,515 [1] [ERROR] System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 16:32:31,931 [1] [INFO ] Application is started.
+ 2022-06-10 16:32:34,574 [1] [ERROR] System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm.GetAPIInputData(GetUserInfoListInputData& inputData) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 296
+   at ASM.EmployeeManagementAPIUIClientWinForm.Presentation.GetUserInfoListForm._btnExecute_Click(Object sender, EventArgs e) in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\Presentation\GetUserInfoListForm.cs:line 89
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at ASM.EmployeeManagementAPIUIClientWinForm.App.Program.Main() in E:\Kaung Htet San\EmployeeManagementTask\Source\EmployeeManagementAPIUIClientWinForm\EmployeeManagementAPIUIClientWinForm\App\Program.cs:line 46
+ 2022-06-10 16:34:04,508 [1] [INFO ] Application is started.
+ 2022-06-10 16:34:10,036 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 16:34:16,405 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 16:34:37,199 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 16:34:37,267 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 16:35:27,885 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 16:35:29,590 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 16:35:35,872 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 2022-06-10 16:35:37,555 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Successfully called GetUserInfoListAPI. ResultCode = 1
+ 2022-06-10 16:35:40,770 [GetUserInfoListCaller] [INFO ] [ASM.EmployeeManagementAPIUIClientWinForm.Mid.GetUserInfoListCaller::CallGetUserInfoListAPI] - Call GetUserInfoList API. LoginID = acty.hr
+ 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.WebAPIUI.Model.Common.Request" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.WebAPIUI.Model.Common.Request" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/EmployeeManagementWebAPIUI/EmployeeManagementWebAPIUIService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.WebAPIUI.Model.Common" />
+  <xs:complexType name="AuthenticationInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/ASM.EmployeeManagement.WebAPIUI.Model.Common" base="q1:ClientInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="LoginID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AuthenticationInfo" nillable="true" type="tns:AuthenticationInfo" />
+</xs:schema>
